@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow-x: hidden;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4vw;
+}
+.main-bx{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+.column1{
+    grid-column: 1/1;
+}
+.column2{
+    grid-column: 2/2;
+}
+.img1{
+    position: relative;
+    top: -6vw;
+    left: 10vw;
+}
+.column1 > .clr{
+    height: 20px;
+    width: 46px;
+    background-color: hsl(230, 29%, 20%);
+    border-radius: 50px;
+    position: relative;
+    top: 4vw;
+    left: 10vw;
+}
+.p1{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Barlow Condensed";
+    color: white;
+    padding-top: 1px;
+}
+.p2{
+    font-family: "Barlow Condensed";
+    letter-spacing: 3px;
+    color: rgb(162, 160, 160);
+    position: relative;
+    top: 2.6vw;
+    left: 14.4vw;
+    font-size: 13px;
+}
+h1{
+    font-family: "Barlow condensed";
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10vw;
+    position: relative;
+    top: -7vw;
+    left: 0vw;
+}
+.p3{
+    font-family: "Barlow";
+    font-size: 20px;
+    position: relative;
+    top: -15vw;
+    left: 10vw;
+    margin-right: 30vw;
+    color: rgb(162, 160, 160);
+}
+.column1 > button{
+    height: 46px;
+    width: 160px;
+    background-color: hsl(0, 75%, 55%);
+    position: relative;
+    top: -10vw;
+    left: 10vw;
+    border-radius: 6px;
+    border-style: none;
+    font-family: "Barlow condensed";
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+}
+.p4{
+    font-size: 15px;
+    font-family: "Barlow Condensed";
+    color: rgb(162, 160, 160);
+    position: relative;
+    top: -12.2vw;
+    left: 23vw;
+    letter-spacing: 5px;
+}
+#menu > a{
+    margin: 20px;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -6vw;
+    left: 8vw;
+}
+#menu > #login-btn{
+    position: relative;
+    left: 13vw;
+    color: rgb(180, 183, 183);
+}
+.img2{
+    position: relative;
+    top: 2.5vw;
+}
+.grey-bg{
+    height: 446px;
+    width: 730px;
+    background-color: rgb(237, 242, 246);
+    position: absolute;
+    top: -5vw;
+    right: 0vw;
+    z-index: -1;
+    border-bottom-left-radius: 50px;
+}
+#menu a:hover{
+    text-decoration: underline;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+#img3{
+    display: none;
+}
+#menu > hr{
+    display: none;
+}
+@media screen and (min-device-width:300px) and (max-device-width:399px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html,body{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    .main-bx{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .content{
+        overflow-x: hidden;
+    }
+    .img2{
+        height: 60vw;
+        width: 130vw;
+        left: 15vw;
+        top: -4vw;
+    }
+    .column1{
+        position: relative;
+        top: 90vw;
+    }
+    .column2{
+        position: relative;
+        top: -128vw;
+    }
+    .grey-bg{
+        left: 60vw;
+        top: 8vw;
+    }
+    .img1{
+        top: -85vw;
+        left: 20vw;
+    }
+    .column1 > h1{
+        margin-right: 20vw;
+        font-size: 43px;
+        top: -12vw;
+        left: 11vw;
+    }
+    .column1 > .clr{
+        top: 2vw;
+        left: 21vw;
+    }
+    .p2{
+        top: -4vw;
+        left: 38vw;
+        font-size: 20px;
+    }
+    .p3{
+        top: -20vw;
+        left: 21vw;
+        margin-right: 50vw;
+    }
+    .column1 > button{
+        top: -10vw;
+        left: 20vw;
+    }
+    .p4{
+        top: -19vw;
+        left: 67vw;
+        letter-spacing: 3px;
+    }
+    #menu{
+        position: relative;
+        top: 40vw;
+        left: 23vw;
+        height: 54vw;
+        width: 85vw;
+        background-color: white;
+        box-shadow: 1px 0px 5px rgb(0, 0, 0, 0.2);
+        opacity: 0;
+        z-index: 1;
+    }
+    #menu > a{
+        display: flex;
+        top: 7vw;
+        left: 28vw;
+    }
+    #menu > #login-btn{
+        top: 6vw;
+        left: 31vw;
+    }
+    #img3{
+        display: block;
+        position: relative;
+        top: 37vw;
+        left: 100vw;
+        z-index: 2;
+    }
+    #menu > .plink{
+        position: relative;
+        left: 29.3vw;
+    }
+    #menu > hr{
+        display: block;
+        position: relative;
+        top: 7vw;
+        left: 5vw;
+        width: 75vw;
+    }
+}
+@media screen and (min-device-width:400px) and (max-device-width:499px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html,body{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    .main-bx{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .content{
+        overflow-x: hidden;
+    }
+    .img2{
+        height: 60vw;
+        width: 130vw;
+        left: 15vw;
+        top: 2vw;
+    }
+    .column1{
+        position: relative;
+        top: 90vw;
+    }
+    .column2{
+        position: relative;
+        top: -128vw;
+    }
+    .grey-bg{
+        left: 60vw;
+        top: 30vw;
+    }
+    .img1{
+        top: -85vw;
+        left: 20vw;
+    }
+    .column1 > h1{
+        margin-right: 20vw;
+        font-size: 43px;
+        top: -12vw;
+        left: 11vw;
+    }
+    .column1 > .clr{
+        top: 2vw;
+        left: 21vw;
+    }
+    .p2{
+        top: -4vw;
+        left: 38vw;
+        font-size: 20px;
+    }
+    .p3{
+        top: -20vw;
+        left: 21vw;
+        margin-right: 50vw;
+    }
+    .column1 > button{
+        top: -10vw;
+        left: 20vw;
+    }
+    .p4{
+        top: -19vw;
+        left: 67vw;
+        letter-spacing: 3px;
+    }
+    #menu{
+        position: relative;
+        top: 50vw;
+        left: 23vw;
+        height: 54vw;
+        width: 85vw;
+        background-color: white;
+        box-shadow: 1px 0px 5px rgb(0, 0, 0, 0.2);
+        opacity: 0;
+        z-index: 1;
+    }
+    #menu > a{
+        display: flex;
+        top: 7vw;
+        left: 28vw;
+    }
+    #menu > #login-btn{
+        top: 6vw;
+        left: 31vw;
+    }
+    #img3{
+        display: block;
+        position: relative;
+        top: 46vw;
+        left: 100vw;
+        z-index: 2;
+    }
+    #menu > .plink{
+        position: relative;
+        left: 29.3vw;
+    }
+    #menu > hr{
+        display: block;
+        position: relative;
+        top: 7vw;
+        left: 5vw;
+        width: 75vw;
+    }
+}
